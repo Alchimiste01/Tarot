@@ -26,8 +26,7 @@ std::string signification(int number) {
         {19, "le soleil."},
         {20, "le jugement."},
         {21, "le monde."},
-    };
-    
+    };    
     if (mapping.find(number) != mapping.end()) {
         return mapping[number];
     } else {
@@ -43,7 +42,6 @@ int main()
     std::cout << "Choix de l'Arcane Majeure.\n";
 
     int number;
-
     do {
         std::cout << "Veuillez entrer un nombre entre 0 et 21\n";
         std::cin >> number;
