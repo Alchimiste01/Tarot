@@ -11,7 +11,7 @@ std::string signification(int number) {
         {4, "l'empereur."},
         {5, "le pape."},
         {6, "l'amoureux."},
-        {7, "le charriot."},
+        {7, "le chariot."},
         {8, "l'amoureux."},
         {9, "l'hermite."},
         {10, "la roue de fortune."},
@@ -26,7 +26,7 @@ std::string signification(int number) {
         {19, "le soleil."},
         {20, "le jugement."},
         {21, "le monde."},
-    };    
+    };
     if (mapping.find(number) != mapping.end()) {
         return mapping[number];
     } else {
@@ -36,7 +36,7 @@ std::string signification(int number) {
 
 int main()
 {
-    std::cout << "******************************************************************************************\n*  Ceci est un programme pour connaitre et apprendre les arcanes du Tarot de Marseille.  *\n*            La version actuelle ne prend en charge que les arcanes majeures.            *\n******************************************************************************************" 
+    std::cout << "  ________________________________________________________________________________________  \n /  Ceci est un programme pour connaitre et apprendre les arcanes du Tarot de Marseille.  \\ \n |            La version actuelle ne prend en charge que les arcanes majeures.            | \n \\________________________________________________________________________________________/ " 
     << std::endl;
 
     std::cout << "Choix de l'Arcane Majeure.\n";
@@ -54,6 +54,7 @@ int main()
 
     std::string texte = signification(number);
     std::cout << "Vous avez choisi l'arcane " << number << ", " << texte << std::endl;
+    std::cout << "Fin du programme" << std::endl;
 
     return 0;
 }
